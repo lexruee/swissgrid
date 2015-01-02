@@ -41,13 +41,18 @@ require 'swissgrid'
 ```ruby
  gps_points = [ [46.881908, 7.471829], [47.220833, 7.028056] ]
 
-# convert to ch1903 points
+# Convert to ch1903 points
  ch1903_points = gps_points.map { |p| Swissgrid::CH1903(p) }
 
-# convert back to gps points
+# Convert back to gps points
  new_gps_points = ch1903_points.map { |p| Swissgrid::WGS84(p) }
 ```
 
+##Changelog
+ * 0.0.2
+    * Add homepage link to gemspec.
+ * 0.0.1
+    * Publish first version.
 
 ## Contributing
 

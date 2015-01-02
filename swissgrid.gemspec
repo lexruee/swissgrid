@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["a.rueedlinger@gmail.com"]
   spec.summary       = %q{A library to convert gps points into the Swiss coordinate system (CH1903).}
   spec.description   = %q{Swissgrid is a library to convert gps points into the Swiss coordinate system (CH1903).}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/lexruee/swissgrid"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
