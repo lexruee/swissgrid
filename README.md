@@ -37,6 +37,18 @@ require 'swissgrid'
  wgs84_coord =  Swissgrid::WGS84(ch1903_point)
 ```
 
+###Convert a list of points
+```ruby
+ gps_points = [ [46.881908, 7.471829], [47.220833, 7.028056] ]
+
+# convert to ch1903 points
+ ch1903_points = gps_points.map { |p| Swissgrid::CH1903(p) }
+
+# convert back to gps points
+ new_gps_points = ch1903_points.map { |p| Swissgrid::WGS84(p) }
+```
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/swissgrid/fork )
