@@ -1,6 +1,6 @@
 # Swissgrid
 
-The swissgrid rubygem is conversion library to convert WGS84 (GPS) points into the Swiss coordinate system (CH1903)
+The swissgrid rubygem is a conversion library to convert WGS84 (GPS) points into the Swiss coordinate system (CH1903)
 and vice versa.
 
 
