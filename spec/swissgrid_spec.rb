@@ -6,7 +6,7 @@ module Swissgrid
 
     it "test conversion from wgs84 to ch1903" do
       gps_point = [46.881908, 7.471829]
-      swiss_coord = Swissgrid::Ch1903(gps_point)
+      swiss_coord = Swissgrid::CH1903(gps_point)
       expect(swiss_coord[0]).to be_within(0.5).of(602530.221)
       expect(swiss_coord[1]).to be_within(0.5).of(192310.331)
       pp swiss_coord

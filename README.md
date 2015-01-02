@@ -29,7 +29,7 @@ require 'swissgrid'
 
 ```ruby
  gps_point = [46.881908, 7.471829] # [lat, lon] Bern
- swiss_coord = Swissgrid::Ch1903(gps_point)
+ swiss_coord = Swissgrid::CH1903(gps_point)
 ```
 ###From CH1903 to WGS84(GPS)
 ```ruby
