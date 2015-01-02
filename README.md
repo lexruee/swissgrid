@@ -49,6 +49,8 @@ require 'swissgrid'
 ```
 
 ##Changelog
+ * 0.0.3
+    * Update Readme.
  * 0.0.2
     * Add homepage link to gemspec.
  * 0.0.1
