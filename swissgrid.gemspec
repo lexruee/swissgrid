@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Swissgrid::VERSION
   spec.authors       = ["Alexander Rueedlinger"]
   spec.email         = ["a.rueedlinger@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A library to convert gps points into the Swiss coordinate system (CH1903).}
+  spec.description   = %q{Swissgrid is a library to convert gps points into the Swiss coordinate system (CH1903).}
   spec.homepage      = ""
   spec.license       = "MIT"
 
