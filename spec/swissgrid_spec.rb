@@ -21,7 +21,7 @@ module Swissgrid
       pp wgs84_coord
     end
 
-    it "tests conversion from Thun ch1903 point to wgs 84 point" do
+    it "tests conversion from Thun ch1903 point to wgs84 point" do
       ch1903_point = [611_202, 177_630]
       expected_wgs_point = [46.7497613025, 7.58523830611]
       wgs84_coord =  Swissgrid::WGS84(ch1903_point)
