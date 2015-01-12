@@ -8,6 +8,30 @@ module Swissgrid
   describe Swissgrid do
 
     #
+    # Test conversion methods directly.
+    #
+
+    describe CH1903 do
+      it "tests from_wgs84" do
+        wgs84_point = [46.881908, 7.471829]
+        expected_ch1903_point = [602_530.221, 192_310.331]
+        ch1903_coord = Swissgrid::CH1903.from_wgs84(wgs84_point)
+        expect(ch1903_coord[0]).to be_within(PRECISION_WGS84_TO_CH1903).of(expected_ch1903_point[0])
+        expect(ch1903_coord[1]).to be_within(PRECISION_WGS84_TO_CH1903).of(expected_ch1903_point[1])
+      end
+    end
+
+    describe WGS84 do
+      it "tests from_ch903" do
+        ch1903_point = [602_530.221, 192_310.331]
+        expected_wgs84_point = [46.881908, 7.471829]
+        wgs84_coord = Swissgrid::WGS84.from_ch1903(ch1903_point)
+        expect(wgs84_coord[0]).to be_within(PRECISION_CH1903_TO_WGS84).of(expected_wgs84_point[0])
+        expect(wgs84_coord[1]).to be_within(PRECISION_CH1903_TO_WGS84).of(expected_wgs84_point[1])
+      end
+    end
+
+    #
     # Test conversion: Zimmerwald CH1903 [602_530.221, 192_310.331] <=> WGS84 [46.881908, 7.471829]
     #
 

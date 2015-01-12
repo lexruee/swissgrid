@@ -25,15 +25,42 @@ Require the swissgrid library as follows:
 ```ruby
 require 'swissgrid'
 ```
+
+###Swissgrid
+The swissgird library has currently two modules:
+
+ * CH1903 - responsible for CH1903 conversions
+ * WGS84 - responsible for WGS84 conversions
+ 
+If other conversions are needed just create an issue or make a pull request :-).
+
 ###From WGS84(GPS) to CH1903
+A WGS84 point can easily be converted to a CH1903 point as follows:
 
 ```ruby
- gps_point = [46.881908, 7.471829] # [lat, lon] Bern
- swiss_coord = Swissgrid::CH1903(gps_point)
+ wgs84_point = [46.951082877, 7.438632495] # [lat, lon] Bern, The building of exact sciences.
+ ch1903_coord = Swissgrid::CH1903.from_wgs84(wgs84_point)
+```
+
+Or just use the following shortcut:
+
+```ruby
+ wgs84_point = [46.951082877, 7.438632495] # [lat, lon] Bern, The building of exact sciences.
+ ch1903_coord = Swissgrid::CH1903(wgs84_point)
 ```
 ###From CH1903 to WGS84(GPS)
+The same way a CH1903 point can be converted to a WGS84 point:
+
+```
+ ch1903_point = [600_000, 200_000] # [y, x] Bern, The building of exact sciences.
+ wgs84_coord =  Swissgrid::WGS84.from_ch1903(ch1903_point)
+```
+
+
+Or just use the following shortcut:
+
 ```ruby
- ch1903_point = [600000, 200000] # [y, x] Bern
+ ch1903_point = [600_000, 200_000] # [y, x] Bern, The building of exact sciences.
  wgs84_coord =  Swissgrid::WGS84(ch1903_point)
 ```
 
@@ -49,6 +76,10 @@ require 'swissgrid'
 ```
 
 ##Changelog
+ * 0.1.1
+    * Refactor tests and codebase
+    * Update Readme
+    * Add comments
  * 0.1.0
     * Fix ch1903 to wgs84 conversion bug. Thanks @christianmeichtry.
  * 0.0.3
