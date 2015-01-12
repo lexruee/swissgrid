@@ -49,12 +49,22 @@ require 'swissgrid'
 ```
 
 ##Changelog
+ * 0.1.0
+    * Fix ch1903 to wgs84 conversion bug. Thanks @christianmeichtry.
  * 0.0.3
     * Update Readme.
  * 0.0.2
     * Add homepage link to gemspec.
  * 0.0.1
     * Publish first version.
+    
+##Specification CH1903 <=> WGS84
+For more details about the conversion see [Swisstopo Referenzsysteme](http://www.swisstopo.admin.ch/internet/swisstopo/en/home/products/software/products/skripts.parsysrelated1.45237.downloadList.10374.DownloadFile.tmp/swissprojectionen.pdf).
+
+##Other tools and scripts
+Swisstopo has also created some scripts and tools for other languages like Java, Python and PHP.
+
+For more details see [Swisstopo Scripts and Tools](http://www.swisstopo.admin.ch/internet/swisstopo/en/home/products/software/products/skripts.html).
 
 ## Contributing
 
