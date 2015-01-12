@@ -2,9 +2,9 @@ module Swissgrid
 
   module WGS84
 
-    Y_BERN = 600000
-    X_BERN = 200000
-    SCALE = 1000
+    Y_BERN = 600_000
+    X_BERN = 200_000
+    SCALE = 1_000_000
 
     def self.from_ch1903(a_point)
       y, x , z = a_point
