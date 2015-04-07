@@ -31,7 +31,7 @@ The swissgird library has currently two modules:
 
  * CH1903 - responsible for CH1903 conversions
  * WGS84 - responsible for WGS84 conversions
- 
+
 If other conversions are needed just create an issue or make a pull request :-).
 
 ###From WGS84(GPS) to CH1903
@@ -51,7 +51,7 @@ Or just use the following shortcut:
 ###From CH1903 to WGS84(GPS)
 The same way a CH1903 point can be converted to a WGS84 point:
 
-```
+```ruby
  ch1903_point = [600_000, 200_000] # [y, x] Bern, The building of exact sciences.
  wgs84_coord =  Swissgrid::WGS84.from_ch1903(ch1903_point)
 ```
@@ -88,7 +88,7 @@ Or just use the following shortcut:
     * Add homepage link to gemspec.
  * 0.0.1
     * Publish first version.
-    
+
 ##Specification CH1903 <=> WGS84
 For more details about the conversion see [Swisstopo Referenzsysteme](http://www.swisstopo.admin.ch/internet/swisstopo/en/home/products/software/products/skripts.parsysrelated1.45237.downloadList.10374.DownloadFile.tmp/swissprojectionen.pdf).
 
