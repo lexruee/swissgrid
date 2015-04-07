@@ -93,9 +93,11 @@ Or just use the following shortcut:
 For more details about the conversion see [Swisstopo Referenzsysteme](http://www.swisstopo.admin.ch/internet/swisstopo/en/home/products/software/products/skripts.parsysrelated1.45237.downloadList.10374.DownloadFile.tmp/swissprojectionen.pdf).
 
 ##Other tools and scripts
-Swisstopo has also created some scripts and tools for other languages like Java, Python and PHP.
+Swisstopo has also created some scripts and tools for other languages like Java, [Python](https://github.com/lexruee/wgs84ch1903py)[1] and PHP.
 
 For more details see [Swisstopo Scripts and Tools](http://www.swisstopo.admin.ch/internet/swisstopo/en/home/products/software/products/skripts.html).
+
+* [1] The python script is not available anymore. I uploaded it [here on github](https://github.com/lexruee/wgs84ch1903py).
 
 ## Contributing
 
